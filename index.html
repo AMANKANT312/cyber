@@ -15,13 +15,13 @@
         box-sizing: border-box;
         margin:0;
         background-color: rgb(83, 77, 77);
-/*         height:100vh; */
+        /* height:100vh; */
     }
 
          /*            common          classss   */
     .card{
        width:70%;
-       height:45%;
+       /* height:45%; */
        background-color:black;
        margin:auto;
        margin-top: 25px;
@@ -34,11 +34,12 @@
        margin:auto;
        text-align: center;
        padding-top:20px;
-       background:rgb(2, 0, 0,0.5);
-       color:white;
+      
+       color:rgb(253, 235, 235);
     }
+  
     .t1:hover{
-        opacity: .8;
+        background:rgb(2, 0, 0,0.5);
     }
     .icons{
         height:2.8em;
@@ -55,10 +56,28 @@
         /* background-blend-mode: hard-light; */
 
     }
+    h1,h2,h3{
+        background-color: rgba(0, 0, 0, 0.353);
+        background:rgb(2, 0, 0,0.5);
+        /* width:50px; */
+    }
+    .flabel{
+        color: rgba(247, 57, 57, 0.932);
+        margin: 0 0 0 5px;
+
+    }
+    .finput{
+       font-size: 20px;
+       margin:5px 0 5px 0;
+       border-radius: 10px;
+       border: 0px;
+       width:90%;
+    }
+    
          /*            content         classs */
     .header{
         height:8%;
-        width:90%;
+        width:95%;
         /* background-image:url(aeroplane.webp); */
         background:rgba(0, 0, 0, 0.0);
         margin:auto;
@@ -70,7 +89,7 @@
    }
    .right{
      
-       width:40%;
+       width:20%;
       height:100%;
        display: inline-block;
    }
@@ -88,7 +107,7 @@
    .left{
        display: inline-block;
        /* border:2px solid red; */
-       width:58%;
+       width:78%;
        height:100%;
        /* color:white; */
        /* height: 100%; */
@@ -152,6 +171,15 @@
     }
     .iconbtn1{
         margin-top:1.5rem;
+        /* margin-bottom:1.5rem; */
+        background:transparent;
+        border:1px;
+        border-radius: 5px;
+        /* padding:0px; */
+    }
+    .iconbtn3{
+        margin-top:1.5rem;
+        margin-bottom:1.5rem;
         background:transparent;
         border:1px;
         border-radius: 5px;
@@ -167,7 +195,7 @@
         list-style: none;
         /* height:7%; */
         /* border:1px solid blue; */
-        margin:2px;
+        margin:1px;
         text-align: center;
 
     }
@@ -189,7 +217,35 @@
    .bmain:hover{
        background-size:130% 130%;
    }
-   /* <!--      footer         --> */
+    /* <!--                FORM                  --> */
+    .centerform{
+        width:300px;
+        margin:auto;
+        margin-top:10px;
+    }
+   .form{
+       /* text-align: center; */
+       margin-left:5%;
+       font-size: 20px;
+       /* margin: 5px 0px 5px 30%; */
+    
+   }
+   .fclass{
+       background-color: rgba(58, 58, 58, 0.856);
+   }
+   .flabel1{
+       margin-top:20px;
+   }
+   .submit{
+       font-size: 25px;
+       border-radius: 15px;
+       border:02px solid rgb(241, 33, 67);
+       background-color:rgba(58, 58, 58, 0.856); 
+       color:white;
+       margin-bottom:10px;
+       margin-top:5px;
+   }
+   /* <!--                         footer                      --> */
    .footer{
        height:12.5%;
        width:90%;
@@ -200,9 +256,16 @@
        border:2px white;
        box-shadow:5px white;
        box-shadow: 0 0 3px 2px #fff;
-       /* margin-bottom: 30px; */
+       margin-bottom: 50px;
        /* padding-bottom: 20px; */
    }
+  
+@media screen and (max-width: 892px)
+{
+        .card{
+            width:90%;
+        }
+}
  </style>
 <body>
     <div class="header">
@@ -225,13 +288,16 @@
             <!-- cards for train -->
      <div class="tmain card">
         <div class="t1">
-            <h2>TICKET BOOKING </h2>
-           <h1> FOR TRAIN</h1>
+           <div class="cont">
+           <h2>TICKET BOOKING </h2>
+            <h1> FOR AEROPLANE</h1> 
+            
+           </div>
            <div class="lisa1">
             
                 <li><button class="iconbtn1"><img src="whatsapp.png" alt="" class="icons"></button></li>
                 <li><button class="iconbtn1"><img src="telegram.png" alt="" class="icons"></button></li>
-                <li><button class="iconbtn1"><img src="Facebook.png" alt="" class="icons"></button></li>
+                <li><button class="iconbtn3"><img src="Facebook.png" alt="" class="icons"></button></li>
                 <!-- <li><button><img src="Google.png" alt="" class="icons"></button></li> -->
            </div>  
            </div>
@@ -244,12 +310,12 @@
         <div class="amain card">
             <div class="t1">
                 <h2>TICKET BOOKING </h2>
-               <h1> FOR BUS</h1>
+               <h1> FOR TRAIN</h1>
                <div class="lisa1">
                 
                     <li><button class="iconbtn1"><img src="whatsapp.png" alt="" class="icons"></button></li>
                     <li><button class="iconbtn1"><img src="telegram.png" alt="" class="icons"></button></li>
-                    <li><button class="iconbtn1"><img src="Facebook.png" alt="" class="icons"></button></li>
+                    <li><button class="iconbtn3"><img src="Facebook.png" alt="" class="icons"></button></li>
                </div>
             </div>
         </div>
@@ -257,20 +323,39 @@
      <div class="bmain card">
         <div class="t1">
             <h2>TICKET BOOKING </h2>
-           <h1> FOR AEROPLANE</h1>
+           <h1> FOR BUS</h1>
            <div class="lisa1">
             
                 <li><button class="iconbtn1"><img src="whatsapp.png" alt="" class="icons"></button></li>
                 <li><button class="iconbtn1" ><img src="telegram.png" alt="" class="icons"></button></li>
-                <li><button class="iconbtn1"><img src="Facebook.png" alt="" class="icons"></button></li>
+                <li><button class="iconbtn3"><img src="Facebook.png" alt="" class="icons"></button></li>
                 
            </div>
         </div>
      </div>
+      <!--                      form for                  Contact -->
+      <div class="card fclass">
+          <div class="centerform">
+            <form action="" class="form">
+            
+                <label for="fname" class="formelement flabel flabel1">Your Name:</label><br>
+                <input type="text" id="fname" name="fname" class="formelement  finput"><br>
+                <label for="lname" class="formelement flabel flabel2">From Location</label><br>
+                <input type="text" id="lname" name="lname" class="formelement  finput"><br>
+                <label for="fname" class="formelement flabel flabel3">To Destination:</label><br>
+                <input type="text" id="fname" name="fname" class="formelement  finput"><br>
+                <label for="lname" class="formelement flabel flabel4">Date:</label><br>
+                <input type="date" id="lname" name="lname" class="formelement  finput">
+                <br>
+                <button class="submit">Submit</button>
+          </form>
+          </div>
+
+      </div>
 
            <!--      footer         -->
-     <div class="footer">
-
+     <div class="footer card">
+          <p>We are responsible for your data not to be published and will not be share to any one we never ask any persoanl details related to y9our banks accout aur any otp aurt password</p>
      </div>
 </body>
 </html>
