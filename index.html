@@ -10,6 +10,7 @@
     *{
         box-sizing: border-box;
         margin:0px;
+        font-family:sans-serif
     }
     body{
         box-sizing: border-box;
@@ -223,6 +224,11 @@
         margin:auto;
         margin-top:10px;
     }
+    .formhead{
+        background-color: white;
+        margin-top:15px;
+        text-align: center;
+    }
    .form{
        /* text-align: center; */
        margin-left:5%;
@@ -232,11 +238,13 @@
    }
    .fclass{
        background-color: rgba(58, 58, 58, 0.856);
+       margin-bottom:10px;
+       /* margin-top:10px; */
    }
    .flabel1{
        margin-top:20px;
    }
-   .submit{
+ .submit{
        font-size: 25px;
        border-radius: 15px;
        border:02px solid rgb(241, 33, 67);
@@ -256,10 +264,19 @@
        border:2px white;
        box-shadow:5px white;
        box-shadow: 0 0 3px 2px #fff;
-       margin-bottom: 50px;
+       margin-bottom: 10px;
        /* padding-bottom: 20px; */
    }
-  
+   .footer2{
+       /* background-color:white; */
+       text-align: center;
+       width:92%;
+       border-radius:5px;
+       margin:auto;
+   }
+   .footer .footer2{
+       font-size: 25px;
+   }
 @media screen and (max-width: 892px)
 {
         .card{
@@ -335,11 +352,16 @@
      </div>
       <!--                      form for                  Contact -->
       <div class="card fclass">
+        <h2 class="formhead">ENTER THE DETAILS </h2>
           <div class="centerform">
+              <!-- <h2 class="formhead">ENTER THE DETAILS </h2> -->
             <form action="" class="form">
             
                 <label for="fname" class="formelement flabel flabel1">Your Name:</label><br>
                 <input type="text" id="fname" name="fname" class="formelement  finput"><br>
+                <label for="lname" class="formelement flabel flabel4">Mobile No</label><br>
+                <input type="phone number" id="lname" name="lname" class="formelement  finput">
+                <br>
                 <label for="lname" class="formelement flabel flabel2">From Location</label><br>
                 <input type="text" id="lname" name="lname" class="formelement  finput"><br>
                 <label for="fname" class="formelement flabel flabel3">To Destination:</label><br>
@@ -354,8 +376,19 @@
       </div>
 
            <!--      footer         -->
-     <div class="footer card">
+     <!-- <div class="footer card">
           <p>We are responsible for your data not to be published and will not be share to any one we never ask any persoanl details related to y9our banks accout aur any otp aurt password</p>
+
+     </div> -->
+     <div class="footer2 fclass">
+        <div class="footer21">
+            <p>Support Privacy Policy Terms and Condition</p>
+        </div>
+        <div class="footer22">
+            <p>
+                @ 2021 All rights Reserved, bookpay.in
+            </p>
+        </div>
      </div>
 </body>
 </html>
